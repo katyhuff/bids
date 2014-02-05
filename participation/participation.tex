@@ -1,0 +1,398 @@
+\documentclass[a4paper, 12pt]{article}
+%\topmargin-1.5cm
+
+\usepackage{fancyhdr}
+\usepackage{pagecounting}
+\usepackage[dvips]{color}
+
+% Color Information from - http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/latex_advanced/node13.html
+
+% NEW COMMAND
+% marginsize{left}{right}{top}{bottom}:
+%\marginsize{3cm}{2cm}{1cm}{1cm}
+%\marginsize{0.85in}{0.85in}{0.625in}{0.625in}
+
+%\advance\oddsidemargin-0.85in
+%\advance\evensidemargin-0.85in
+%\textheight8.5in
+%\textwidth6.75in
+\newcommand\bb[1]{\mbox{\em #1}}
+\def\baselinestretch{1.25}
+%\pagestyle{empty}
+\newcommand{\hsp}{\hspace*{\parindent}}
+\definecolor{gray}{rgb}{0.4,0.4,0.4}
+
+\newcommand{\authorname}{Kathryn~D.~Huff }
+\newcommand{\authoremail}{katyhuff@gmail.com}
+\newcommand{\authorsite}{katyhuff.github.com}
+
+\begin{document}
+\pagestyle{fancy}
+%\pagenumbering{gobble}
+%\fancyhead[location]{text} 
+% Leave Left and Right Header empty.
+%\lhead{}
+%\rhead{}
+%\rhead{\thepage}
+\lhead{\textcolor{gray}{\it \authorname}}
+\rhead{\textcolor{gray}{\thepage/\totalpages{}}}
+\renewcommand{\headrulewidth}{0pt} 
+\renewcommand{\footrulewidth}{0pt} 
+\fancyfoot[C]{\footnotesize \textcolor{gray}{\authorsite}} 
+
+\begin{center}
+{\LARGE \bf Participation}\\
+\vspace*{0.1cm}
+{\normalsize \authorname (\authoremail)}
+\end{center}
+%\vspace*{0.2cm}
+
+%\begin{document}
+%\centerline {\Large \bf Research Statement for \authorname}
+%\vspace{0.5cm}
+
+% Write about research interests...
+%\footnotemark
+%\footnotetext{Check This}
+
+% Your response to the “call for participation” should be a 2-3 page document 
+% that describes your efforts in data science, including your challenges and 
+% opportunities. We are not asking for a budget or a formal proposal. Instead, 
+% please provide an overview of the scientific goals and vision and how working 
+% within a lager data science context will further that vision. Our intent is 
+% two-fold:  To build a community of data science, and help us steer and evolve 
+% the mission of BIDS; and to help attract funding from other sources, including 
+% new grants, support from private donors, and corporate sponsorships.
+
+% Introduction
+Improving the safety and sustainability of nuclear power requires improved
+nuclear reactor designs, fuel cycle strategies, and waste disposal concepts.
+These systems are sufficiently complex that modern software methods,
+sophisticated data evaluation, and high-performance computing resources are
+essential to understanding and improving them. The importance of sophisticated
+scientific computing in advancing safe, sustainable nuclear power drives my
+research direction toward the development of computational methods and
+simulation tools for nuclear engineering across many scales, with special focus
+on the safety and sustainability of advanced reactor designs and fuel cycles.
+
+Indeed, computational nuclear engineering relies on enormous datasets in many 
+dimensions, traverses disparate scales, incorporates many physics, and demands 
+precision.  Nuclear data typically takes the form of large libraries involving 
+tabulated and evaluated data representing neutron, charged particle, and atomic 
+reaction probabilities for all of the more than three thousand known 
+radionuclides.  The driving equation for neutron behavior, the time-dependent 
+Boltzmann equation, is solved in a 7-dimensional phase space, ($3$ in space, $2$ 
+in angle, and one each in energy and time). The scale of a nuclear reactor 
+simulation is inherently large, spanning five orders of magnitude in space and 
+ten in neutron energy. Resolved discretization across those scales would require 
+over $10^{17}$ degrees of freedom per timestep, well beyond the
+capabilities of even exascale computing. In this way, without sophisticated
+data and analysis methods, we would run out of computational resources before
+heat transport, fluid flow, or material performance in the reactor had even
+been addressed.
+
+%correct a dearth of accuracy, transparency, and access in the current landscape of computational tools for nuclear engineering. 
+In the near term, I intend to continue developing computational methods for fuel 
+cycle sustainability and reactor safety evaluation. These are the areas in which I 
+have had sufficient experience to independently develop and pursue relevant 
+research questions.  Can nonlinear programming techniques be applied to 
+determine appropriately critical fresh fuel compositions in a reprocessing 
+facility model? To what extent are repository site selection decisions and fuel 
+cycle decisions coupled? What are the comparative global fuel supply impacts of 
+political instabilities, international fuel takeback agreements, or
+trade embargoes between specific pairs of nations?  What deterministic methods 
+best capture the physics of complex geometries such as pebble fuel with TRISO 
+particles? What is the effect of this fuel choice on the bounding magnitude of a 
+prompt reactivity insertion resulting in safe shutdown? 
+
+In the longer term, I hope to establish a research program capable of tackling a 
+variety of challenges in nuclear energy from the technical to the political.  I 
+hope to uncover groundbreaking insights by means of simulation methods, 
+efficient algorithms, novel computer architectures, and sophisticated design 
+tailored to the many scales and multiple physics encountered in nuclear energy 
+technology.  The tenets of scientific endeavor (e.g., data control, 
+reproducibility, comprehensive documentation, and peer review) suffer in 
+projects that fail to make use of current development tools such as unit 
+testing, version control, automated documentation and others 
+\cite{wilson_best_2014, merali_computational_2010}. Maintenance of rigorous 
+scientific computing standards will help my research program avoid such pitfalls 
+\cite{huff_rapid_2011} and incorporation of new numerical methods for reactor 
+physics will keep my research program relevant.
+
+\section*{\textcolor{gray}{\it Past and Current Research}}
+
+My past and current work in the area of nuclear fuel cycle analysis has focused 
+on the application and development of the Cyclus nuclear fuel cycle simulator 
+project \cite{cyclus_github_2011} and of the Cyder used fuel disposition and 
+disposal system model \cite{cyder_github_2012, huff_integrated_2013}. Most 
+recently, I have extended my research focus to include neutronics and coupled 
+physics modeling of the Pebble-Bed, Fluoride-Salt-Cooled, High-Temperature 
+Reactor (PB-FHR) \cite{facilitators_fluoride-salt-cooled_2013, 
+facilitators_fluoride-salt-cooled_2013-1, 
+facilitators_fluoride-salt-cooled_2013-2, 
+facilitators_fluoride-salt-cooled_2013-3}.  My previous research has included 
+numerical methodologies for accelerator physics applications 
+\cite{huff_single_2003, huff_digital_2004}, experimental cosmological telescope 
+calibration \cite{huff_celestial_2008}, and experimental condensed matter 
+physics \cite{clerc_liquid_2008}. 
+
+%What got you interested in this research?
+%What was the burning question that you set out to answer?
+%How can your research be applied?
+%Why is your research important within your field?
+%What challenges did you encounter along the way, and how did you overcome them
+
+%\paragraph{Experimental Physics Research}
+% Los Alamos
+% QUIET
+% Universidad de Chile
+
+\paragraph{Cyclus Fuel Cycle Simulator} Faced with inflexibility in previous 
+nuclear fuel cycle system simulation frameworks, Paul P.H. Wilson and I 
+envisioned a more modular, encapsulated design. I led this software design effort 
+\cite{huff_open_2011, huff_cyclus_2011}, called Cyclus, and was its lead 
+developer in its first years.  As a direct result of 
+Cyclus' incorporation of modern software development practices and desired 
+capabilities such as openness, modularity, and scalable fidelity, it has now 
+grown into a multi-institution collaboration with dozens of users and 
+contributors. 
+
+\paragraph{Cyder Repository Analysis Model}
+
+% what is cyder
+
+My dissertation work \cite{huff_integrated_2013}, a hydrologic and thermal 
+geologic disposal model called Cyder, illuminated the distinct dominant physics 
+of candidate repository geologies, designs, and engineering components. By 
+integrating hydrologic contaminant transport \cite{huff_sensitivity_2012} and 
+transient thermal transport \cite{huff_numerical_2012} with the Cyclus fuel 
+cycle simulation framework, Cyder calculates disposal-related fuel cycle metrics 
+by providing a dynamic simulation environment in which to prototype geologic 
+disposal concepts in the context of alternative fuel cycles 
+\cite{huff_cyclus_2013}.  
+
+% what is the methodology
+%
+%By implementing a number of interchangeable hydrologic contaminant transport 
+%methods in a modular software design, this tool supports the examination of the 
+%relative accuracy of those methods \cite{huff_cyclus_2013}. It also provides the 
+%user with modeling options that alternately optimize speed and sensitivity for 
+%an array of reducing, saturated geologic disposal environments (i.e. enclosed 
+%clay, salt, and granite concepts).  Sensitivity analyses of a detailed 
+%hydrologic contaminant transport repository model were conducted to inform of 
+%abstraction efforts necessary for the development of these semi-analytical 
+%models \cite{huff_sensitivity_2012}.  
+%
+%A transient thermal model capable of arriving at a heat-based capacity quickly 
+%for an arbitrary waste stream enables the model to perform dynamic thermal 
+%capacity estimation.  It relies on tabulated repository heat evolution results 
+%for a parameter space covering the thermal coefficient range of the main 
+%geologies of interest and over a range of realistic waste package spacings. The 
+%analytic model used to calculate the tabulated results was developed at Lawrence 
+%Livermore National Laboratory and compared favorably to traditional finite 
+%difference models during a benchmarking effort that I conducted jointly with 
+%Theodore H. Bauer at ANL \cite{huff_numerical_2012}.
+
+%\paragraph{Other Fuel Cycle Analysis Activities}
+%
+%With the Systems Analysis Campaign at Idaho National Laboratory I applied the 
+%vision for Cyclus' ongoing development and lessons learned from previous 
+%simulators to  author a requirements document intended to direct development for 
+%their Grand Challenge Fuel Cycle Simulator initiative \cite{huff_next_2010}.   
+%Additionally, in a Non-Proliferation Case Study within the University of 
+%Wisconsin committee on World Affairs and Global Energy (WAGE), I corresponded 
+%with experts and researched modeling methodologies in use in quantitative 
+%political science as well as qualitative analysis and experimental models.  This 
+%case study investigated the applicability of analytical models for determining 
+%indicators that a nation-state is likely to begin a nuclear weapons program. 
+
+\paragraph{Coupled Multiphysics for Advanced Reactor Analysis}
+
+My postdoctoral research has begun to expand my expertise by emphasizing the 
+development of a high-fidelity, fully-coupled, multiphysics model of the PB-FHR 
+at the University of California - Berkeley with Professors Jasmina Vuji\`c and Per 
+Peterson. The objective of this work is to conduct high-fidelity simulations of 
+transient event behavior in this complex reactor in a high-performance computing 
+environment.  In my first months at Berkeley, I forged a collaboration with the 
+Idaho National Laboratory to conduct this development within the Multiphysics 
+Object Oriented Simulation Environment (MOOSE) \cite{gaston_moose:_2009}. This 
+work will result in a transient, three-dimensional MOOSE module with fully 
+coupled thermal-hydraulics and deterministic neutronics.  
+
+
+%\paragraph{Physics Collaborations} 
+%In collaboration with the Los Alamos Neutron Science Center, I conducted two 
+%projects; in one, I employed digital filtration techniques to the neutron cross 
+%section data from the Lead Slowing Down Spectrometer and, in the other, I built 
+%MCNPX models of an experimental apparatus for detection of neutron induced 
+%electronics failures . This was followed by artificial and celestial calibration 
+%of polarimeters for the Q and U Imaging ExperimenT (QUIET) cosmic microwave 
+%background telescope at the University of Chicago \cite{huff_celestial_2008} . 
+%Finally, I collaborated on a far from equilibrium granular materials experiment 
+%in which an experimental apparatus that I built was used to compare the van der 
+%Waals gas model to phase changes in a spatially constrained collection of 
+%rapidly shaken metal spheres \cite{clerc_liquid_2008}. 
+
+\section*{\textcolor{gray}{\it Future Research}}
+%What direction will your research take you in next
+%what new questions do you have?
+% external research funding
+Novel solutions to challenges in nuclear energy such as nuclear reactor accident 
+response, nuclear fuel cycle strategy, and waste management will arise from the  
+development of application-driven numerical simulation methods and incorporation 
+of sophisticated computational tools. To this end, my work will range from 
+individual contributions to existing toolkits to comprehensive solution 
+libraries for specific nuclear applications (e.g., a suite of activation 
+analysis methods for sub-critical systems). Open source projects such as 
+Cyclus \cite{huff_cyclus_2011}, MOOSE \cite{gaston_moose:_2009}, and the Python 
+for Nuclear Engineering (PyNE) toolkit \cite{pyne_pyne_2011} are fertile ground 
+for contributing computational nuclear engineering tools with a wide impact 
+potential. My research program will leverage the significant effort represented 
+by those tools, rather than reinventing the wheel, and will benefit from the 
+user and developer communities that they possess.  I will briefly expand on two 
+of my near term focus areas which exemplify these goals. 
+
+\paragraph{Advanced Technology Modeling for Fuel Cycle Analysis} 
+
+One of the continuing challenges in evaluating the system level impacts of 
+nuclear technologies and policies is the need for a standardized simulation 
+platform and library of models representing nuclear technologies and calculating 
+fuel cycle metrics.  The Cyclus simulation framework 
+has provided this standardizing platform, but it is incomplete without a 
+robust library of fuel cycle metric calculation methods and a versatile ecosystem of 
+models to represent innovative nuclear technologies. My work in this area will 
+fill this gap. 
+
+The Cyclus modeling paradigm enables both scientific and policy analyses by 
+following transactions of discrete quanta of material among discrete facilities, 
+arranged in a geographic and institutional framework, and trading in flexible 
+markets. Cyclus' sophisticated design emphasizes separation of the core simulation logic 
+from the technical nuclear process models representing the facilities of the 
+nuclear fuel cycle. This ensures robust modularity with regard to functionality.  
+
+My work will leverage Cyclus toward the development of a library 
+of methods for calculating fuel cycle metrics.  Object-oriented methods enabled 
+by the unique Cyclus modeling paradigm will result in metrics with richer detail 
+than has historically been possible with previous simulators. One example is a 
+``shadow fuel cycle'' nonproliferation calculation strategy in which nuclear material is 
+diverted by a nefarious actor within a facility to determine the minimum 
+detectable diverted material amount.  This metric is used to describe the 
+detection sensitivity of inspections.  Creative safeguards strategies may emerge 
+from the richness of disaggregated detail made possible by evaluating this 
+nefarious theft scenario within the context of the discrete materials and 
+discrete facilities of the Cyclus environment.
+
+Additionally, my work will include both focused, single technology model development and 
+development of concise parametric models capable of representing myriad 
+technologies.  Such models will enable assessment of a broad range of technology 
+and policy implications related to the introduction of those technologies into 
+the world nuclear energy market. By balancing speed with the capability to 
+capture dominant physics, Cyclus can rapidly assess the implications of those 
+technologies on the broader fuel cycle.  Contributing advanced reactor and fuel 
+cycle concepts to the ecosystem of available models will also increase the 
+potential for collaboration with other domestic and international researchers in 
+technology evaluations and community benchmarking exercises.
+
+I envision, for example, advising a student interested in innovative reactor 
+design to develop a parameterized spectral model to approximate burnup and 
+transmutation physics with appropriate speed and fidelity for fuel cycle 
+simulations.  This work will benefit from my experience navigating this 
+trade-off between speed and fidelity, in which a model must be rapid while 
+simultaneously detailed enough to uncover system level responses to technology 
+choices.
+
+
+\paragraph{Multiphysics Model Development for Reactor Design and Analysis}
+
+Another focus of my research program will include the development of 
+multiphysics models of reactor designs, with particular focus on those boasting 
+inherent safety features (i.e. accident tolerant fuels or non-voiding coolants).  
+Design- and Beyond-Design-Basis Accident simulations are essential to the 
+advancement of nuclear reactor safety. Faithful assessments of reactor response 
+in these scenarios require fully coupled, transient simulation of neutronics, 
+thermal hydraulics, and structural performance, necessitating specialized 
+computational methodologies. 
+
+In particular, the Jacobian-Free Newton-Krylov (JFNK) solution method 
+\cite{knoll_jacobian-free_2004}, combined with 
+physics-based preconditioning, enables extraordinary parallel scalability and 
+and fully-coupled solutions to systems of neutron transport and thermal 
+hydraulic equations. MOOSE, from INL, which relies on this exceptional numerical 
+method as well as adaptive mesh refinement for structured and 
+unstructured meshes, is beginning to be used in earnest for nuclear engineering 
+applications (e.g., \cite{park_tightly_2009, short_multiphysics_2013, 
+novascone_assessment_2012, novascone_multidimensional_2012, 
+gaston_parallel_2009} among others). Moreover, the MOOSE tool possesses a 
+modular, object-oriented simulation environment approach, similar to that of 
+Cyclus, which allows user-developers to construct applications by focusing on 
+the unique physics of their modeling problem  with minimal concern for the 
+system solution methodology. 
+
+My future work with MOOSE, continuing a recent collaboration that I forged with the 
+MOOSE team while at UC-Berkeley, will focus on the development 
+of MOOSE `Applications' capable of 3-dimensional, multi-scale, massively parallel 
+analyses of promising reactor technologies. This will consist of developing 
+dimension-agnostic, application-driven physics 
+`Kernels,' combining them with validated kernels developed by others, and 
+constructing them into coherent simulation objects. 
+
+In particular, I am interested in the potential impacts of the fully coupled 
+nature of MOOSE multiphysics. The ability to eliminate or nearly eliminate the 
+scaling and coupling distortions seen in simulations that are only loosely or 
+tightly coupled is a breakthrough capability that could change the face of 
+reactor modeling entirely.  
+
+\paragraph{External Research Funding}
+My future research plans fit well into the Department of Energy (DOE) Nuclear 
+Energy University Programs (NEUP) funding scope. In particular, both Cyclus and 
+MOOSE applications have been supported in recent workscopes. Since Cyclus' 
+recent adoption by the DOE Office of Nuclear Energy (DOE-NE)  as its flagship 
+nuclear fuel cycle simulator, it has garnered an international, 
+multi-institution collaboration of users and developers including more than 
+three NEUP-funded projects. 
+
+The inclusion of the Cyclus project in previous workscopes indicates that 
+nuclear fuel energy system simulation development with the Cyclus tool is an 
+area of sustained interest within the DOE-NE.  I have already submitted, as 
+principal investigator, a 2014 NEUP pre-proposal to support work on advanced 
+laser separation technology modeling for fuel cycle analysis.  I expect that my 
+intimate familiarity with Cyclus will add strength to this and future proposals.  
+
+Nonproliferation applications of fuel cycle analysis have the potential to benefit greatly from funding 
+opportunities through the National Nuclear Security Administration (NNSA), 
+Nuclear Regulatory Commission (NRC), and Department of Homeland Security 
+Domestic Nuclear Detection Office (DHS-DNDO). These pursuits in combination with 
+my focus on safety may  strengthen my applications to junior faculty development 
+awards available from the National Science Foundation (NSF), DOE, DHS-DNDO, the 
+Office of Naval Research Research (ONR), and the Air Force Office of Scientific 
+Research (AF-OSR).
+
+Finally, I also expect to seek additional support for methods development and 
+contribution to computational nuclear toolkits from programs such as Google 
+Summer of Code, the Alfred P. Sloan Foundation, and the Gordon and Betty Moore 
+Foundation.  The NSF is also interested in 
+scientific computing and I am currently assisting in the collaborative preparation 
+of a proposal for funding from NSF in the field of scientific computing 
+education. Furthermore, collaboration with Nuclear Engineering Advanced 
+Modeling and Simulation campaign with current and past colleagues at Idaho, 
+Argonne, and Oak Ridge National Laboratories may provide additional student and 
+collaboration support in the area of modeling and simulation. 
+
+I have had many opportunities to participate in both failed and successful grant 
+proposals.  As a graduate student, I assisted in writing grant proposals with my 
+advisor, Paul P.H. Wilson. In 2012, one of those reached success, securing a 
+three year, \$1.2 million, Nuclear Energy University Programs (NEUP) Research 
+and Development grant for the expansion of Cyclus. Additionally, I was the 
+primary author on an NEUP proposal for the 2013 call for proposals. I was 
+pleased to have been invited to submit a full proposal, but that full proposal 
+did not progress further. It is my hope that these early experiences with grant 
+writing will serve me well in my own research program.
+
+
+
+
+\bibliographystyle{unsrt}
+\bibliography{participation}
+
+\end{document}
+
