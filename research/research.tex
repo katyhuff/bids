@@ -67,6 +67,22 @@ the development of computational methods and simulation tools for nuclear
 science and  reactor physics across many scales, with special focus on the 
 safety and security of advanced reactor designs and fuel cycles.
 
+Computational nuclear engineering relies on enormous datasets in many 
+dimensions, traverses disparate scales, incorporates many physics, and demands 
+precision.  Nuclear data typically takes the form of large libraries involving 
+tabulated and evaluated data representing neutron, charged particle, and atomic 
+reaction probabilities for all of the more than three thousand known 
+radionuclides.  The driving equation for neutron behavior, the time-dependent 
+Boltzmann equation, is solved in a 7-dimensional phase space, ($3$ in space, $2$ 
+in angle, and one each in energy and time). The scale of a nuclear reactor 
+simulation is inherently large, spanning five orders of magnitude in space and 
+ten in neutron energy. Resolved discretization across those scales would require 
+over $10^{17}$ degrees of freedom per timestep, well beyond the
+capabilities of even exascale computing. In this way, without sophisticated
+data and analysis methods, we would run out of computational resources before
+heat transport, fluid flow, or material performance in the reactor had even
+been addressed. 
+
 %correct a dearth of accuracy, transparency, and access in the current landscape of computational tools for nuclear engineering. 
 In the near term, I intend to continue developing computational methods for fuel 
 cycle sustainability and reactor safety evaluation. These are the areas in which I 
