@@ -1,0 +1,111 @@
+\documentclass[a4paper, 10pt]{article}
+%\topmargin-1.5cm
+
+\usepackage{fancyhdr}
+\usepackage{pagecounting}
+\usepackage[dvips]{color}
+
+% Color Information from - http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/latex_advanced/node13.html
+
+% NEW COMMAND
+% marginsize{left}{right}{top}{bottom}:
+%\marginsize{3cm}{2cm}{1cm}{1cm}
+%\marginsize{0.85in}{0.85in}{0.625in}{0.625in}
+
+%\advance\oddsidemargin-0.85in
+%\advance\evensidemargin-0.85in
+%\textheight8.5in
+%\textwidth6.75in
+\newcommand\bb[1]{\mbox{\em #1}}
+\def\baselinestretch{1.25}
+%\pagestyle{empty}
+\newcommand{\hsp}{\hspace*{\parindent}}
+\definecolor{gray}{rgb}{0.4,0.4,0.4}
+
+\newcommand{\authorname}{Kathryn~D.~Huff }
+\newcommand{\authoremail}{katyhuff@gmail.com}
+\newcommand{\authorsite}{katyhuff.github.com}
+
+\begin{document}
+\pagestyle{fancy}
+%\pagenumbering{gobble}
+%\fancyhead[location]{text} 
+% Leave Left and Right Header empty.
+%\lhead{}
+%\rhead{}
+%\rhead{\thepage}
+\lhead{\textcolor{gray}{\it \authorname}}
+\rhead{\textcolor{gray}{\thepage/\totalpages{}}}
+\renewcommand{\headrulewidth}{0pt} 
+\renewcommand{\footrulewidth}{0pt} 
+\fancyfoot[C]{\footnotesize \textcolor{gray}{\authorsite}} 
+
+\begin{center}
+{\LARGE \bf Budget}\\
+\vspace*{0.1cm}
+{\normalsize \authorname (\authoremail)}
+\end{center}
+%\vspace*{0.2cm}
+
+%\begin{document}
+%\centerline {\Large \bf Research Statement for \authorname}
+%\vspace{0.5cm}
+
+% Write about research interests...
+%\footnotemark
+%\footnotetext{Check This}
+
+% Your response to the “call for participation” should be a 2-3 page document 
+% that describes your efforts in data science, including your challenges and 
+% opportunities. We are not asking for a budget or a formal proposal. Instead, 
+% please provide an overview of the scientific goals and vision and how working 
+% within a lager data science context will further that vision. Our intent is 
+% two-fold:  To build a community of data science, and help us steer and evolve 
+% the mission of BIDS; and to help attract funding from other sources, including 
+% new grants, support from private donors, and corporate sponsorships.
+
+% Existing extramural support and plans for generating follow on funding
+
+% Introduction
+
+\begin{table}[h!]
+  \centering
+  \begin{tabular}{|l|r|r|r|r|}
+    \hline
+    \textbf{Item} & \textbf{BIDS } & \textbf{NSSC} & \textbf{FHR} & \textbf{Total}\\
+    \hline
+    Annual Salary  & 30000 & 15000 & 15000 & 60000\\
+    Overhead (58\%)  & 17400 & 8700 & 8700 & 34800\\
+    Travel, SciPy & 2000 & 0 & 0 & 2000\\
+    Other Travel & 0 & 4000 & 0 & 4000\\
+    Total & 49400 & 27700 & 23700 & 100800\\
+    \hline
+  \end{tabular}
+  \caption{Estimated budget for a single academic year. This budget would apply 
+    to each of the 2014-2015 and 2015-2016 academic years.}
+  \label{tab:budget}
+\end{table}
+
+\section*{\textcolor{gray}{\it Budget Justification}}
+My postdoctoral appointment is currently funded at \$60,000 annually. I have a
+two year appointment which is two academic years long and began in September of
+2013.  My funding comes equally from two sources. The first is the Nuclear
+Science and Security Consortium (NSSC), in which I am a fellow. The second is a
+DOE-NE Integrated Research Project grant on Fluoride-Salt-Cooled
+High-Temperature Reactors (FHRs).  
+
+NSSC also funds necessary travel associated with my nuclear science research,
+but cannot fund travel unrelated to nulear science such as the Scientific
+Computing with Python Conference, SciPy. I have been a Technical
+Program Chair for the last two years and this activity is a major feature of my
+volunteer work in open science, scientific computing education, and
+reproducible research. Travel to SciPy would be an essential activity for my
+BIDS-related research direction.
+
+If I were awarded 50\% funding for two academic years (September 2014 --
+September 2016) through the BIDS Data Science Fellowship, NSSC and the FHR
+project would correspondingly provide support for me at the 50\% level through
+September 2016.
+
+\end{document}
+
