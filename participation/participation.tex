@@ -23,8 +23,7 @@
 \definecolor{gray}{rgb}{0.4,0.4,0.4}
 
 \newcommand{\authorname}{Reactor Design and Neutronics Group}
-\newcommand{\longauthorname}{Dr. Kathryn~D.~Huff\\ Prof. Jasmina Vujic\\ Prof. 
-Rachel Slaybaugh\\ and others.}
+\newcommand{\longauthorname}{Dr. Denia~Djoki\'{c}\\Dr.  Kathryn~Huff\\Prof.~Rachel~Slaybaugh\\Prof.~Jasmina~Vuji\'{c} } 
 \newcommand{\authorsite}{ucb-rdn.github.com}
 
 \begin{document}
@@ -66,66 +65,71 @@ Rachel Slaybaugh\\ and others.}
 % new grants, support from private donors, and corporate sponsorships.
 
 % Introduction
-The Reactor Design and Neutronics group at the University of California -- 
-Berkeley \cite{reactor_ucb-rdn_2014} is a team of professors, postdocs, and 
-students whose research is driven by the importance of sophisticated scientific 
-computing in advancing safe, sustainable nuclear power.  
-The direction of this group emphasizes the development of computational methods 
-and simulation tools for nuclear reactor physics across many scales, with 
-special focus on the safety and sustainability of advanced reactor designs and 
-fuel cycles.  
+The Reactor Design and Neutronics group at the University of 
+California--Berkeley \cite{reactor_design_and_neutronics_university_2013} is a team of professors, 
+postdocs, and students who pursue advances in nuclear reactor physics by means of 
+simulation methods, efficient algorithms, novel computer architectures, and 
+sophisticated software design tailored to the many scales and multiple physics 
+encountered in nuclear energy technology.  The direction of this group 
+emphasizes the development of computational methods and simulation tools for 
+nuclear reactor physics across many scales, with special focus on the safety and 
+sustainability of advanced reactor designs and fuel cycles.  
+
 It is our hope that novel solutions to these challenges in nuclear 
 energy will arise from the development of application-driven numerical 
 simulation methods and incorporation of sophisticated computational tools.  
-We expect that involvement in the BIDS community has the potential to expand the 
-scope of data and analysis methodologies within our wheelhouse. Similarly, we 
-expect that our approach to data-driven science promises to similarly expand 
-horizons for the rest of the BIDS community.
-
-Computational nuclear engineering relies on enormous datasets in many 
-dimensions, traverses disparate scales, incorporates many physics, and demands 
-precision.  Nuclear data typically takes the form of large libraries involving 
-tabulated and evaluated data representing neutron, charged particle, and atomic 
-reaction probabilities for all of the more than three thousand known 
-radionuclides.  The driving equation for neutron behavior, the time-dependent 
-Boltzmann equation, is solved in a 7-dimensional phase space, ($3$ in space, $2$ 
-in angle, and one each in energy and time). The scale of a nuclear reactor 
-simulation is inherently large, spanning five orders of magnitude in space and 
-ten in neutron energy. Resolved discretization across those scales would require 
-over $10^{17}$ degrees of freedom per timestep, well beyond the
-capabilities of even exascale computing. In this way, without sophisticated
-data and analysis methods, we would run out of computational resources before
-heat transport, fluid flow, or material performance in the reactor had even
-been addressed. 
-
-%correct a dearth of accuracy, transparency, and access in the current landscape of computational tools for nuclear engineering. 
+We expect that involvement in the BIDS community will extend the 
+scope of data and analysis methodologies within our wheelhouse and provide 
+educational opportunities in software best practices to our students and 
+researchers. Similarly, we expect that our approach to data-driven science 
+promises to correspondingly expand horizons for the rest of the BIDS community.
 
 \section*{\textcolor{gray}{\it Past and Current Efforts}}
 
-The past and current work in this group has focused 
-on the development of software tools seeking to tackle a variety of challenges 
-in nuclear reactor physics. As such, the group has become a nexus of 
-computational tool development for simulation environments and analysis toolkits 
-in the field. These efforts are enabled by a vision that emphasizes adaptation 
-of relevant data methodologies to domain-specific computational analysis. The 
-following examples of current work demonstrate the way this vision is executed 
-within this group.
+The past and current work in this group has focused on the development of 
+software toolkits and simulation environments tackling a variety of challenges 
+in nuclear reactor physics. These efforts are enabled by a vision that 
+emphasizes adaptation of relevant computational methods to domain-specific 
+analysis. The following examples of current work demonstrate the 
+execution of this vision.
 
 \paragraph{Neutronics Methods on GPU Architectures}
 
 One example of data-driven computational tool development in this research group 
 is recent work in the area of neutronics methods for Graphical Processing Unit 
 (GPU) computer architectures. This work, known as Weaving All the Random 
-Particles (WARP), has sought to advance methods for monte carlo reactor physics 
-analysis within a GPU framework. This work was acheived by applying modern 
-algorithms for GPU monte carlo analysis to the specific structure of nuclear 
+Particles (WARP), has sought to advance methods for Monte Carlo reactor physics 
+analysis within a GPU framework. This work was achieved by applying modern 
+algorithms for GPU Monte Carlo analysis to the specific structure of nuclear 
 data and features reactor physics calculations.
+
+
+
+\paragraph{Contributions to Open Source Toolkits}
+
+Work in this group ranges from individual contributions in existing toolkits to 
+comprehensive solution libraries for specific nuclear applications.  Open source 
+software projects this group is involved in include the Python for Nuclear 
+Engineering (PyNE) toolkit \cite{pyne_pyne_2011}, the Cyclus fuel cycle 
+simulator \cite{huff_cyclus_2011}, the Serpent Monte Carlo neutronics code 
+\cite{leppanen_serpentcontinuous-energy_2012}, and the Multiphysics Object Oriented Simulation 
+Environment (MOOSE) \cite{gaston_moose:_2009}. These are fertile ground for 
+contributing computational nuclear engineering tools with a wide impact 
+potential and this research program will continue to leverage the significant 
+effort represented by those and similar tools, rather than reinventing the 
+wheel, and will benefit from the user and developer communities that they 
+possess.  
+
+
+\section*{\textcolor{gray}{\it Future Research}}
+
+Below, we will briefly expand on three near term 
+focus areas that are synergistic with the BIDS effort.  
 
 \paragraph{Coupled Multiphysics for Advanced Reactor Analysis}
 
-The postdoctoral research of Dr. Kathryn Huff is focused on the development of a 
-high-fidelity, fully-coupled, multiphysics model of the Pebble-Bed, 
-Fluoride-Salt-Cooled, High-Temperature Reactor (PB-FHR) 
+Work is beginning on a high-fidelity, fully-coupled, multiphysics model of the 
+Pebble-Bed, Fluoride-Salt-Cooled, High-Temperature Reactor (PB-FHR) 
 \cite{facilitators_fluoride-salt-cooled_2013, 
 facilitators_fluoride-salt-cooled_2013-1, 
 facilitators_fluoride-salt-cooled_2013-2, 
@@ -133,49 +137,46 @@ facilitators_fluoride-salt-cooled_2013-3}. The objective of this work is to
 conduct high-fidelity simulations of transient event behavior in this complex 
 reactor in a high-performance computing environment.
 
-In her first months at Berkeley, she forged a collaboration with the Idaho 
-National Laboratory to conduct this development within an open-source 
-multiphysics framework, the Multiphysics Object Oriented Simulation Environment 
-(MOOSE) \cite{gaston_moose:_2009}. This work will result in a transient, 
+This simulation will take place within an open-source 
+multiphysics framework, MOOSE \cite{gaston_moose:_2009}. 
+This framework utilizes the Jacobian Free 
+Newton Krylov method for solving large systems of partial differential 
+equations. 
+Our domain-specific application of this work will result in a transient, 
 three-dimensional MOOSE module with fully coupled thermal-hydraulics and 
-deterministic neutronics.  
+deterministic neutronics. However, the MOOSE software is physics agnostic. Since 
+it provides a powerful, broadly applicable simulation environment, it may prove 
+relevant to a number of the scientific efforts involved in the BIDS effort. 
 
 
-\section*{\textcolor{gray}{\it Future Research}}
+\paragraph{Teaching Skills for Scientific Computing}
+The tenets of scientific endeavor (e.g., data control, 
+reproducibility, comprehensive documentation, and peer review) suffer in 
+projects that fail to make use of current development tools such as unit 
+testing, version control, automated documentation, and others 
+\cite{wilson_best_2014, merali_computational_2010}.  Recently, a peer-education 
+initiative \cite{huff_hacker_2014} encouraging rigorous 
+scientific computing standards and open science has begun to help the Reactor 
+Design and Neutronics group to avoid such pitfalls.
 
-To this end, work in this group ranges 
-from individual contributions to existing toolkits to comprehensive solution 
-libraries for specific nuclear applications. Open source software projects such as 
-MOOSE \cite{gaston_moose:_2009}, the Python for Nuclear Engineering (PyNE) 
-toolkit \cite{pyne_pyne_2011}, and Cyclus \cite{huff_cyclus_2011} are fertile ground for contributing computational nuclear engineering tools with a wide impact 
-potential. This research program will continue to leverage the significant effort represented 
-by those tools, rather than reinventing the wheel, and will benefit from the 
-user and developer communities that they possess.  Below, we will briefly expand 
-on two near term focus areas which exemplify these goals.  
+While the current initiative takes the form of a seminar series targeted at 
+graduate students, a recently submitted NSF proposal takes the form of a
+short summer workshop targeted at undergraduates. That proposal, if funded, expects to 
+benefit greatly from the presence of BIDS on campus by making use of expertise 
+among the fellows and by engaging in the conversation that will be underway in 
+the BIDS Education and Training working group.  
+
 
 \paragraph{A Public Radiation Detection Database}
 
 Members of the Reactor Design and Neutronics group are becoming involved in a 
-nascent project called Kelp Watch \cite{vetter_kelp_2013}. This work revolves 
-around the collection, analysis, and presentation of environmental radation 
-detection data. 
-
-
-\paragraph{Skills for Scientific Computing}
-The Reactor Design and Neutronics group pursues advances in nuclear reator 
-physics by means of simulation methods, 
-efficient algorithms, novel computer architectures, and sophisticated design 
-tailored to the many scales and multiple physics encountered in nuclear energy 
-technology.  The tenets of scientific endeavor (e.g., data control, 
-reproducibility, comprehensive documentation, and peer review) suffer in 
-projects that fail to make use of current development tools such as unit 
-testing, version control, automated documentation and others 
-\cite{wilson_best_2014, merali_computational_2010}. 
-
-Recently, structured education \cite{huff_hacker_2014, huff_rapid_2011} related 
-to rigorous scientific computing standards has begun to help this research 
-program avoid such pitfalls. 
-
+nascent project called Kelp Watch \cite{vetter_about_2014}. This work revolves 
+around the collection, analysis, and presentation of environmental radiation 
+detection data. By collecting environmental radiation data and providing an API 
+for exploration of that data, this project promises to provide an excellent 
+resource for open science research on radiation and its effects on the 
+environment. Just as importantly, though, is the curation, analysis, and 
+visualization of that data for public consumption. 
 
 \section*{\textcolor{gray}{\it Importance of BIDS}}
 
@@ -186,8 +187,14 @@ domain-specific applications of the broadly applicable data science techniques,
 algorithms, and best practices that promise to be the focus of the BIDS 
 collaboration.
 
+Additionally, as we engage in scientific computing education and research, we 
+hope to learn from and contribute to the conversations being held in the BIDS 
+Working Groups on Education and Training, Software Tools and Environments, and 
+Reproducible and Open Science.  
 
-Additionally, 
+Finally, as our research group and our scientific field at large face the 
+challenge of retaining the brightest minds, we look forward to guidance from the 
+Working Group on Career Paths and Alternative Metrics.
 
 \bibliographystyle{unsrt}
 \bibliography{participation}
