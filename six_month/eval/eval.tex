@@ -1,0 +1,200 @@
+\documentclass[a4paper, 10pt]{article}
+%\topmargin-1.5cm
+
+\usepackage{fancyhdr}
+\usepackage{pagecounting}
+\usepackage[dvips]{color}
+
+% Color Information from - http://www-h.eng.cam.ac.uk/help/tpl/textprocessing/latex_advanced/node13.html
+
+% NEW COMMAND
+% marginsize{left}{right}{top}{bottom}:
+%\marginsize{3cm}{2cm}{1cm}{1cm}
+%\marginsize{0.85in}{0.85in}{0.625in}{0.625in}
+
+%\advance\oddsidemargin-0.85in
+%\advance\evensidemargin-0.85in
+%\textheight8.5in
+%\textwidth6.75in
+\newcommand\bb[1]{\mbox{\em #1}}
+\def\baselinestretch{1.25}
+%\pagestyle{empty}
+\newcommand{\hsp}{\hspace*{\parindent}}
+\definecolor{gray}{rgb}{0.4,0.4,0.4}
+
+\newcommand{\authorname}{Katy Huff}
+\newcommand{\longauthorname}{Dr.  Kathryn~Huff}
+\newcommand{\authorsite}{katyhuff.github.io}
+
+
+\newcommand{\myitem}[1]{\item[\textcolor{gray}{\textbf{#1}}]}
+\newcommand{\boldblue}[1]{\textcolor{cyan}{\textbf{#1}}}
+
+\begin{document}
+\pagestyle{fancy}
+%\pagenumbering{gobble}
+%\fancyhead[location]{text}
+% Leave Left and Right Header empty.
+%\lhead{}
+%\rhead{}
+%\rhead{\thepage}
+\lhead{\textcolor{gray}{\it \authorname}}
+\rhead{\textcolor{gray}{\thepage/\totalpages{}}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[C]{\footnotesize \textcolor{gray}{\authorsite}}
+
+\begin{center}
+{\LARGE \bf Self Evaluation}\\
+\vspace*{0.1cm}
+{\normalsize \longauthorname}
+\end{center}
+%\vspace*{0.2cm}
+
+
+% Introduction
+
+The following is a non-exhaustive list of activities I have participated in 
+since arriving in Berkeley in September 2013. During that time, I have been, on 
+average funded by the FHR project ($\sim$30\%), NSSC 
+($\sim$30\%), BIDS ($\sim$25\%), and 
+LLNL ($\sim$15\%). \boldblue{Especially notable accomplishments are in blue}.
+
+\section*{FHR-Related}
+
+\begin{itemize}
+\myitem{PyRK} I have written a \boldblue{Python package for 0-D accident transient 
+modeling in nuclear reactors (PyRK) \cite{huff_pyrk_2015}}. I have conducted an 
+SFR analysis for validation. Additionally, this tool is expected to be 
+used as an engine for running accident transient experiments in CIET this fall. 
+\myitem{PB-FHR Analysis} The main purpose of PyRK, however, is simulation of 
+Pebble-Bed Fluoride-Salt-Cooled High-Temperature Reactor (PB-FHR).  transients.  
+Accordingly, I am working on a manuscript related to my current results from 
+PyRK for the case of reactivity insertions and Loss of Heat Sink (LOHS) 
+transients in the PB-FHR. I will soon distribute a draft to my collaborators 
+for review and participation in the hopes that it will ideally be submitted 
+late this summer.
+\myitem{MOOSE Extension} Development of my 3D, multi-scale, multi-physics PBFHR 
+model has begun. Using Pronghorn and RattleSNake within the MOOSE framework, I 
+can couple thermal hydraulics on coupled coarse and fine meshes. This requires 
+me to modify the pebble-bed flow-model to (currently gaseous flow) to allow 
+molten salt coolant in the pebble bed. I expect this analysis software will be 
+\boldblue{ready for demonstration on the  NERSC resources in late fall 2015.} 
+\myitem{NERSC} I am pleased that, based on a proposal I submitted with BIDS, 
+\boldblue{I was awarded a signficant time allocation on NERSC.} I intend to 
+use my NERSC allocation (millions of cpu hours) to conduct my PB-FHR transient 
+analysis this fall (MOOSE extension above).
+\myitem{INL LDRD} Related to my MOOSE extension, I am a co-investigator on an 
+LDRD proposal that, if funded, will provide travel funding to INL, access to 
+potenially validating data from the industry co-investigator, and potential 
+summer funding for a Berkeley student.
+\myitem{COMSOL ATWS} I refactored Scarlat's AHTR COMSOL model to include the geometry 
+and neutronics of the PB-FHR and ran the first PB-FHR ATWS analysis. The 
+pressure drop optimization was conducted by Huddar and our results were 
+included in the PB-FHR Mk1 Design Report.  
+\myitem{BDBE Workshop} I led analysis for the Source Term Analysis and 
+Radiological Release Pathways section of the never-released 2013 BDBE workshop 
+white paper. I also assisted with Beyond Design Basis Event Analysis 
+Methods and Experimental Gaps section of the white paper.
+\end{itemize}
+
+\section*{Other Nuclear Engineering}
+\begin{itemize}
+\myitem{PyNE} I am a contributor to the PyNE (python for nuclear engineering 
+toolkit). Accordingly, I co-authored a PyNE ANS conference paper 
+\cite{bates_pyne_2014} and hosted two PyNE hackathons (NSSC 2013 and BIDS 
+2014). In the hackathons, we had developers join us for a few days and we 
+improved this open source package immensely. \boldblue{This package is used by many 
+nuclear engineers at universities and the national laboratories (including some 
+in the FHR group at Berkeley).}
+\myitem{Cyclus} Continuing my involvement, I contributed to the most recent 
+release od Cyclus and have helped to conduct Fuel Cycle analyses in 
+collaboration with DOE and Prof. Fratoni. Finally, I \boldblue{submitted two 
+manuscripts} this year related to my past work with the Cyclus project. Though 
+they have not yet been accepted, they are in revision.
+\myitem{Cyder} I \boldblue{submitted and resubmitted a journal article} based 
+on my dissertation work concerning hydrologic and thermal modeling of nuclear 
+waste repositories. 
+I am awaiting review comments on the resubmitted paper.
+\myitem{FCWMD Vice-Chair} Continuing my service to ANS, I am now the 
+\boldblue{Vice-Chair of the Fuel Cycle and Waste Management Division.}
+\myitem{Conference Papers} I submitted an ANS summary on the topic of 
+a nuclear engineering course syllabus based on my recently published book.
+\myitem{BFF Program} I was invited to and attended a ``Building Future Faculty
+Program'' at NCSU. This has already contributed to my pursuit of a faculty 
+position in Nuclear Engineering.
+\myitem{Mentorship} To varying degrees, I have guided the research computation 
+of numerous students in the NE department including Xin Wang, Blake Huff, Tommy 
+Cisneros, Ryan Bergmann, Kelly Rowland, Madicken Munk, Grant Buster, Josh 
+Howland, and Russell Nibbelink. 
+\end{itemize}
+
+
+\section*{Scientific Computing Education}
+
+\begin{itemize}
+\myitem{Best Practices} In 2014, I coauthored an extremely popular paper on how 
+best to use computers in science\cite{wilson_best_2014}. It has been 
+\textcolor{cyan}{\textbf{cited 80 times}}.
+\myitem{The Hacker Within} I have led a \boldblue{popular weekly seminar on 
+scientific computing, attended by many nuclear engineering graduate students} 
+I've brought dozens of people into the NSSC and BIDS spaces with this meeting. 
+For this seminar, I schedule tutorials on tools and best practices for 
+scientific computing. It is popular among nuclear engineers and physicists, but 
+attracts a diversity of individuals. This recent success has inspired my PhD 
+advisor to reboot the original THW in Madison and Dr. Arna Karnik at Swinburne 
+University in Melbourne, Australia has started her own chapter of THW there 
+within the physics department.
+\myitem{Software Carpentry} I am the current \boldblue{elected Chair 
+of the Software Carpentry Foundation Steering Committee}. This international 
+nonprofit organization focuses on teaching scientific computing skills to 
+scientists.  Software Carpentry is responsible for over 100 workshops per year 
+and now has dozens of university, laboratory, and governmental partners.  My 
+leadership has additionally led to a BIDS collaboration with them and has 
+facilitated sold out workshops in the BIDS space. 
+\myitem{Case Studies} With the BIDS Reproducibility Working Group, I
+have helped collect case studies of reproducible workflows in scientific work 
+on campus. As a result, I am on track to be a \boldblue{chapter author} on the book form 
+of this collection and look forward to co-authoring an extended whitepaper or 
+journal article on the lessons learned.
+\myitem{MOOSE Workshop} Professor Fratoni and I have arranged for a workshop on a
+multiphysics simulation environment, MOOSE.
+\myitem{WiSE Workshop} I was the lead instructor for a workshop at LBNL 
+dedicated to women in science and engineering. It became a 
+\myitem{GitHub Town Hall} I was invited by GitHub to visit the UW eScience space
+and to sit on a panel discussing ``What Academia Can Learn From Open Source''.
+\myitem{O'Reilly Book} Between May 2014 and January 2015, \boldblue{I wrote a 
+book} to help students and researchers in the physical sciences to conduct the 
+computational aspects of their research more effectively. It's called Effective 
+Computation In Physics and hundreds of copies have already been sold.
+\myitem{Guest Lectures} I have served as a guest lecturer for many lessons in 
+NE155 and NE255.
+\end{itemize}
+
+
+\section*{Other}
+\begin{itemize}
+\myitem{SciPy} I have served as the Technical Program Chair (2013 and 2014) and 
+Proceedings Chair (2015) for SciPy, a conference on the scientific use of 
+python that brings together an entire community at the intersection of science 
+and programming.
+\myitem{ASPP School} I have been invited two years in a row to be the 
+\boldblue{keynote speaker} for a week-long Advanced Scientific Programming in 
+Python Summer School in Europe (Croatia 2014, Munich 2015).
+\myitem{BSN Deep Dive} I was invited to be a mentor for a weekend 
+retreat intended to help female Berkeley graduate students in STEM.  This is 
+called a ``deep-dive'' and was hosted by the Berkeley Science Network at 
+Asilomar in March 2015.
+\myitem{NEUP 2013 Proposal} I was primary author, but not PI on an NEUP 
+Proposal on reactor technology analysis in the context of fuel cycles that was 
+invited back for a full proposal but ultimately was not awarded.  
+\myitem{NEUP 2014 Proposal} I was PI on an NEUP Proposal on laser isotopic 
+separation that was invited back for a full proposal but ultimately was not 
+awarded.
+\myitem{NSF 2014 Proposal} I was a co-investigator on an NSF proposal (led by 
+Professor Slaybaugh) related to scientific computing education. It was ultimately not 
+awarded.
+\end{itemize}
+\bibliographystyle{plain}
+\bibliography{eval}
+\end{document}
